@@ -29,6 +29,11 @@ function Input({ addTodo }) {
   //     setText(e.target.value);
   //   }
 
+  function handleClick() {
+    addTodo(text);
+    setText("");
+  }
+
   return (
     <div>
       <input
@@ -36,8 +41,9 @@ function Input({ addTodo }) {
         placeholder="Enter a todo..."
         id="todo-input"
         onInput={(e) => setText(e.target.value)}
+        value={text}
       />
-      <button onClick={() => addTodo(text)}>Add a todo</button>
+      <button onClick={handleClick}>Add a todo</button>
     </div>
   );
 }
