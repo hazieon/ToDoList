@@ -15,8 +15,10 @@ _behaviour_
 function ListItem({ text, handleDelete }) {
   return (
     <li>
-      <span>{text}</span>
-      <button onClick={handleDelete}>Delete me</button>
+      <span className="todo-text">{text}</span>
+      <button className="del-button" onClick={handleDelete}>
+        ✂---
+      </button>
     </li>
   );
 }

@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 id="list-head">To Do List:</h1>
       <Input addTodo={addItem} />
       <List todos={todos} handleDelete={handleDelete} />
     </div>

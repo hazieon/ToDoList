@@ -43,7 +43,9 @@ function Input({ addTodo }) {
         onInput={(e) => setText(e.target.value)}
         value={text}
       />
-      <button onClick={handleClick}>Add a todo</button>
+      <button className="button" onClick={handleClick}>
+        Add ☑
+      </button>
     </div>
   );
 }
