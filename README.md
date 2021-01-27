@@ -1,8 +1,9 @@
 # To do list - REACT
+A pair programming project done in week 6 of the School of Code bootcamp. 
+It was the first project I made using React.js components and state.
 
-We are going to make a to do list with our new found react skills. Users will be able to add to the list, and delete items from the list.
-
-## Make this
+## Take a look at the application here
+https://react-lists.netlify.app/
 
 ### Component Tree
 
