@@ -38,10 +38,10 @@ function Input({ addTodo }) {
     <div>
       <input
         type="text"
-        placeholder="Enter a todo..."
+        placeholder="Enter a todo..." //is this an included attribute?
         id="todo-input"
-        onInput={(e) => setText(e.target.value)}
-        value={text}
+        onInput={(e) => setText(e.target.value)} //or onChange
+        value={text} //onClick could run an anonymous function that takesin  the text
       />
       <button className="button" onClick={handleClick}>
         Add ☑

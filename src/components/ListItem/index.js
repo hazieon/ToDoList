@@ -12,6 +12,8 @@ _behaviour_
 
 */
 
+import PropTypes from "prop-types";
+
 function ListItem({ text, handleDelete }) {
   return (
     <li>
@@ -22,5 +24,10 @@ function ListItem({ text, handleDelete }) {
     </li>
   );
 }
+
+// ListItem.propTypes = {
+//   text: PropTypes.array, //causes an error!!!!!!!!!!!!!!!! yay
+//   handleDelete: PropTypes.func,
+// };
 
 export default ListItem;

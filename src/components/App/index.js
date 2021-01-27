@@ -26,10 +26,6 @@ function App() {
     setTodos([...todos, itemToAdd]);
   }
 
-  // function handleDelete(itemToRemove) {
-  //   setTodos(todos.filter((todo) => todo !== itemToRemove));
-  // }
-
   function handleDelete(index) {
     setTodos([...todos.slice(0, index), ...todos.slice(index + 1)]);
   }
@@ -44,3 +40,7 @@ function App() {
 }
 
 export default App;
+
+// function handleDelete(itemToRemove) {
+//   setTodos(todos.filter((todo) => todo !== itemToRemove));
+// }

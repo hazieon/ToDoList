@@ -13,6 +13,7 @@ _behaviour_
 */
 
 import ListItem from "../ListItem";
+import PropTypes from "prop-types";
 
 function List({ todos, handleDelete }) {
   return (
